@@ -1,0 +1,10 @@
+asp
+aspx
+dll
+elf
+exe
+c
+hex
+python
+raw
+sh
