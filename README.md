@@ -48,6 +48,7 @@ pip install -e .
 or run it without installing:
 
 ```bash
+pip install -r requirements.txt
 python venominator/cli.py
 ```
 
