@@ -1,13 +1,6 @@
-Architectures = {
-    1: "x64",
-    2: "x86",
-}
+Architectures = {1: "x64", 2: "x86"}
 
-Encoders_x64 = {
-    1: "x64/xor",
-    2: "x64/xor_dynamic",
-    3: "x64/zutto_dekiru",
-}
+Encoders_x64 = {1: "x64/xor", 2: "x64/xor_dynamic", 3: "x64/zutto_dekiru"}
 
 Encoders_x86 = {
     1: "x86/add_sub",
@@ -46,14 +39,7 @@ Formats_Win = {
     8: "raw",
 }
 
-Formats_Nix = {
-    1: "elf",
-    2: "c",
-    3: "hex",
-    4: "python",
-    5: "raw",
-    6: "sh",
-}
+Formats_Nix = {1: "elf", 2: "c", 3: "hex", 4: "python", 5: "raw", 6: "sh"}
 
 Payloads_Win_x86 = {
     1: "windows/meterpreter/bind_tcp",
@@ -109,7 +95,4 @@ Payloads_Nix_x86 = {
     9: "linux/x86/shell_reverse_tcp",
 }
 
-Platforms = {
-    1: "Linux",
-    2: "Windows",
-}
+Platforms = {1: "Linux", 2: "Windows"}

@@ -3,6 +3,7 @@
 from venominator import attributes
 from subprocess import call
 
+
 class Venom(object):
     def __init__(self):
         self.d = {}
@@ -16,27 +17,27 @@ class Venom(object):
     def set_arch(self) -> None:
         source = attributes.Architectures
         for k, v in source.items():
-            print(k ,v)
+            print(k, v)
         i = input("Enter architecture: ")
         try:
             i = int(i)
         except ValueError:
             self.set_arch()
         if i in source.keys():
-                self.d.update({"architecture": f"-a {source[i]}"})
+            self.d.update({"architecture": f"-a {source[i]}"})
         else:
             self.set_arch()
 
     def set_platform(self) -> None:
         source = attributes.Platforms
         for k, v in source.items():
-            print(k ,v)
+            print(k, v)
         i = input("Enter platform: ")
         try:
             i = int(i)
         except ValueError:
             self.set_platform()
-        if i in source.keys():    
+        if i in source.keys():
             self.d.update({"platform": f"--platform {source[i]}"})
         else:
             self.set_platform()
@@ -53,7 +54,7 @@ class Venom(object):
         else:
             return
         for k, v in source.items():
-            print(k ,v)
+            print(k, v)
         i = input("Enter payload: ")
         try:
             i = int(i)
@@ -94,13 +95,13 @@ class Venom(object):
             elif "x86" in self.d["architecture"]:
                 source = attributes.Encoders_x86
             for k, v in source.items():
-                print(k ,v)
+                print(k, v)
             i = input("Enter encoder: ")
             try:
                 i = int(i)
             except ValueError:
                 self.set_encoder()
-            if i in source.keys():    
+            if i in source.keys():
                 self.d.update({"encoder": f"-e {source[i]}"})
                 self.set_iterations()
             else:
@@ -125,7 +126,7 @@ class Venom(object):
         else:
             return
         for k, v in source.items():
-            print(k ,v)
+            print(k, v)
         i = input("Enter format: ")
         try:
             i = int(i)
