@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-from pprint import pprint
 from venominator import attributes
 from subprocess import call
 
@@ -9,7 +8,7 @@ class Venom(object):
         self.d = {}
 
     def build_cmd(self) -> None:
-        base = "msfvenom "  # need trailing space here for command
+        base = "msfvenom"
         options = []
         for v in self.d.values():
             options.append(v)
