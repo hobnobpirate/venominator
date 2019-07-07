@@ -8,11 +8,10 @@ class Venom(object):
         self.d = {}
 
     def build_cmd(self) -> None:
-        base = "msfvenom"
         options = []
         for v in self.d.values():
             options.append(v)
-        self.cmd = base + " ".join(options)
+        self.cmd = f"msfvenom {' '.join(options)}"
 
     def set_arch(self) -> None:
         source = attributes.Architectures

@@ -41,7 +41,7 @@ It should be saved in the *./Payloads* directory on your host.
 ### Without Docker
 
 If you are running this program on a host that either has Metasploit installed or you do not want to generate a payload the script will still run in standalone mode.
-You can either install it into your own virtual environment (Debian/Ubuntu steps shown):
+You can install it into your own virtual environment (Debian/Ubuntu steps shown):
 
 ```bash
 sudo apt install python3-venv -y
@@ -49,13 +49,6 @@ python3 -m venv test
 source test/bin/activate
 pip install -e .
 venominator
-```
-
-or run it without installing (not recommended):
-
-```bash
-pip install -r requirements.txt
-python venominator/cli.py
 ```
 
 ## Usage
