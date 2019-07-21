@@ -20,7 +20,7 @@ Next, either use Docker (recommended method) or a virtual environment to install
 
 ### Docker
 
-There is a Kali Docker image that can be setup to run this script if you want to test the output function.
+There is a Metasploit Framework Docker image that can be setup to run this script if you want to test the output function.
 If you cloned the repo, the Dockerfile is included.
 To build the Docker container, run:
 
@@ -32,11 +32,11 @@ This will download the Kali docker image and install all necessary requirements 
 Once you've built the container, you can run *venominator* by running the container with:
 
 ```bash
-docker run --rm -it -v "$(pwd)"/Payloads:/app/ venominator
+docker run --rm -it -v "$(pwd)"/payloads:/payloads venominator
 ```
 
 While the bind mount is not strictly necessary, it will allow you to have access to the generated payload on your host machine.
-It should be saved in the *./Payloads* directory on your host.
+It should be saved in the *./payloads* directory on your host.
 
 ### Without Docker
 
