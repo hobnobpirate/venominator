@@ -28,7 +28,7 @@ To build the Docker container, run:
 docker build --rm -f "Dockerfile" -t venominator:latest .
 ```
 
-This will download the Kali docker image and install all necessary requirements (metasploit and Python3).
+This will download the Metasploit Framework Docker image and install venominator in it.
 Once you've built the container, you can run *venominator* by running the container with:
 
 ```bash
